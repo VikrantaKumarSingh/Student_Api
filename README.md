@@ -9,13 +9,13 @@ The project is built with:<br>
 •	Frontend: HTML, CSS, JavaScript<br>
 •	Backend: Node.js, Express.js<br>
 •	Database: MySQL<br>
-________________________________________<br>
+________________________________________
 Setup and Running the Project Locally<br>
 Prerequisites<br>
 •	Node.js: Install Node.js.<br>
 •	MySQL: Install MySQL.<br>
 •	Git: Install Git.<br>
-________________________________________<br>
+________________________________________
 Steps to Set Up<br>
 1.	Clone the Repository<br>
 First, clone the zip repository to your local machine<br>
@@ -53,12 +53,12 @@ node server.js<br>
 o	The server will run on http://localhost:3000.<br>
 6.	Run the Frontend<br>
 o	Open index.html in your browser using a live server (e.g., Live Server extension).<br>
-________________________________________<br>
+________________________________________
 API Documentation<br>
 Base URL<br>
 bash<br>
 http://localhost:3000/students<br>
-________________________________________<br>
+________________________________________
 1. Create a Student<br>
 Endpoint: POST /students<br>
 Description: Add a new student to the database.<br>
@@ -80,7 +80,7 @@ Json<br>
 •	400 Bad Request:<br>
 Json<br>
 { "message": "All fields are required." }<br>
-________________________________________<br>
+________________________________________
 2. Get All Students<br>
 Endpoint: GET /students<br>
 Description: Fetch all students from the database.<br>
@@ -106,7 +106,7 @@ Json<br>
 •	500 Internal Server Error:<br>
 Json<br>
 { "message": "Error fetching students" }<br>
-________________________________________<br>
+________________________________________
 3. Get a Single Student<br>
 Endpoint: GET /students/:id<br>
 Description: Fetch details of a student by ID.<br>
@@ -123,7 +123,7 @@ Json<br>
 •	404 Not Found:<br>
 Json<br>
 { "message": "Student not found" }<br>
-________________________________________<br>
+________________________________________
 4. Update a Student<br>
 Endpoint: PUT /students/:id<br>
 Description: Update an existing student’s details by ID.<br>
@@ -142,7 +142,7 @@ Json<br>
 •	404 Not Found:<br>
 Json<br>
 { "message": "Student not found" }<br>
-________________________________________<br>
+________________________________________
 5. Delete a Student<br>
 Endpoint: DELETE /students/:id<br>
 Description: Delete a student by ID.<br>
@@ -153,7 +153,7 @@ Json<br>
 •	404 Not Found:<br>
 Json<br>
 { "message": "Student not found" }<br>
-________________________________________<br>
+________________________________________
 Features<br>
 •	Frontend:<br>
 o	Add or update student details using a form.<br>
@@ -162,7 +162,7 @@ o	Edit or delete student records.<br>
 •	Backend:<br>
 o	API endpoints to handle CRUD operations.<br>
 o	MySQL database integration for persistent storage.<br>
-________________________________________<br>
+________________________________________
 Additional Instructions<br>
 Data Validation<br>
 The application ensures that any student data submitted is properly validated to confirm:<br>
@@ -174,7 +174,7 @@ Pagination Support<br>
 For the endpoint GET /students, pagination is provided to handle large datasets. The page and limit query parameters determine which set of records is returned. If no arameters are specified, the default values of page=1 and limit=10 will be used.
 Error Handling<br>
 If a request is made with invalid data, the API will respond with a 400 Bad Request error and a description of the validation issue.<br>
-________________________________________<br>
+________________________________________
 Conclusion<br>
 This API serves as a foundational backend for student management, with basic CRUD operations and pagination support. It can easily be extended with additional functionality such as authentication, advanced search, or more complex data relationships.
 
