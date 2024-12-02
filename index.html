@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    input, button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 16px;
+      flex: 1 1 200px;
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+      overflow-x: auto;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      word-wrap: break-word;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: #f4f65e 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+
+
+    /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    input, button {
+      flex: 1 1 auto;
+      width: 100%;
+    }
+
+    table, th, td {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    table {
+      font-size: 11px;
+    }
+
+    table, th, td {
+      padding: 5px;
+    }
+
+    button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <h1>Student Management</h1>
+
+  <!-- Form to add or update a student -->
+  <form id="studentForm">
+    <input type="hidden" id="studentId" placeholder="Student ID (for update)">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="number" id="age" placeholder="Age" required>
+    <input type="text" id="grade" placeholder="Grade" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <button type="button" onclick="createOrUpdateStudent()">Save Student</button>
+  </form>
+
+  <!-- Button to fetch all students -->
+  <button onclick="fetchStudents()">Show All Students</button>
+
+  <!-- Table to display student data -->
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
