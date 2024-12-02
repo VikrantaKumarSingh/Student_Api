@@ -1,4 +1,4 @@
-________________________________________<br>
+________________________________________
 Project Description<br>
 The Student Management Web Application is a simple CRUD (Create, Read, Update, Delete) system for managing student data. The application allows users to:<br>
 •	Add new students<br>
