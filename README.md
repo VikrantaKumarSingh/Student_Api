@@ -1,14 +1,14 @@
 ________________________________________
 Project Description<br>
-The Student Management Web Application is a simple CRUD (Create, Read, Update, Delete) system for managing student data. The application allows users to:
-•	Add new students
-•	View all students
-•	Update student details
-•	Delete students
-The project is built with:
-•	Frontend: HTML, CSS, JavaScript
-•	Backend: Node.js, Express.js
-•	Database: MySQL
+The Student Management Web Application is a simple CRUD (Create, Read, Update, Delete) system for managing student data. The application allows users to:<br>
+•	Add new students<br>
+•	View all students<br>
+•	Update student details<br>
+•	Delete students<br>
+The project is built with:<br>
+•	Frontend: HTML, CSS, JavaScript<br>
+•	Backend: Node.js, Express.js<br>
+•	Database: MySQL<br>
 ________________________________________
 Setup and Running the Project Locally
 Prerequisites
